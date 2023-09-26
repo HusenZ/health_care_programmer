@@ -6,8 +6,12 @@ Widget displayBlog(String content) {
     child: RichText(
       text: TextSpan(
         text: content,
-        style: const TextStyle(color: Colors.black, fontSize: 15),
+        style: const TextStyle(
+          color: Colors.black,
+          fontSize: 15,
+        ),
       ),
+      softWrap: true,
     ),
   );
 }

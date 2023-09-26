@@ -30,7 +30,7 @@ class AppointmentBooking extends StatelessWidget {
         DisplayDoctor(
           imageLink:
               'https://th.bing.com/th/id/R.73f17f59628da3c50a5ac731efb9b083?rik=3gPDInK%2fzind1g&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2f9i4%2f6xr%2f9i46xrzeT.png&ehk=k4j2MBAWRURVQmHNn%2bW2fkG5QjoTH2HeyE%2bM%2fCcbcjQ%3d&risl=&pid=ImgRaw&r=0',
-          dName: 'Chota Doctor',
+          dName: 'Dr.Majnu',
           dQualification: 'Surgeon',
         ),
       ],

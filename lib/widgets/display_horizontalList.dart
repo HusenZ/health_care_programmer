@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:health_care/view/appointment_booking.dart';
 import 'package:health_care/view/faqs.dart';
-import 'package:health_care/view/featured_service.dart';
 
 class DisplayHorizontalList extends StatefulWidget {
   const DisplayHorizontalList({super.key});
@@ -17,7 +16,7 @@ class _DisplayHorizontalListState extends State<DisplayHorizontalList>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, initialIndex: 0, vsync: this);
+    _tabController = TabController(length: 2, initialIndex: 0, vsync: this);
   }
 
   @override
@@ -33,15 +32,8 @@ class _DisplayHorizontalListState extends State<DisplayHorizontalList>
         children: [
           TabBar(
             controller: _tabController,
-            onTap: (selectedTabIndex) {},
             isScrollable: true,
             tabs: const [
-              Tab(
-                child: Text(
-                  'Featured Service',
-                  style: TextStyle(color: Colors.black),
-                ),
-              ),
               Tab(
                 child: Text(
                   'Appointment Booking',
@@ -60,7 +52,6 @@ class _DisplayHorizontalListState extends State<DisplayHorizontalList>
             child: TabBarView(
               controller: _tabController,
               children: const [
-                FeaturedService(),
                 AppointmentBooking(),
                 FaqsView(),
               ],
